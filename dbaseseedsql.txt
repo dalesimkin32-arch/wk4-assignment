@@ -1,0 +1,32 @@
+CREATE TABLE sci_fi_novels (
+  id INT PRIMARY KEY,
+  title TEXT,
+  author TEXT,
+  ISBN13 TEXT,
+  summary TEXT,
+  review TEXT,
+  star_rating DECIMAL(2,1),
+  cover_image TEXT
+);
+
+INSERT INTO sci_fi_novels (id, title, author, ISBN13, summary, review, star_rating, cover_image) VALUES
+(1, 'Dune', 'Frank Herbert', '9780441172719', 'Paul Atreides navigates politics and prophecy on the desert planet Arrakis.', 'A genre-defining epic of politics, religion, and survival.', 4.8, 'https://images-na.ssl-images-amazon.com/images/I/91tWZ3gKJXL.jpg'),
+(2, 'Neuromancer', 'William Gibson', '9780441569595', 'A washed-up hacker is hired for one last job in a world of AI and cyberspace.', 'Gibson’s vision shaped the cyberpunk genre.', 4.6, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(3, 'The Left Hand of Darkness', 'Ursula K. Le Guin', '9780441478125', 'A human envoy must navigate a world of ambisexual beings and political intrigue.', 'A profound exploration of gender and identity.', 4.7, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(4, 'Foundation', 'Isaac Asimov', '9780553293357', 'A mathematician predicts the fall of the Galactic Empire and creates a foundation to preserve knowledge.', 'Asimov’s sweeping saga of science and strategy.', 4.6, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg'),
+(5, 'Snow Crash', 'Neal Stephenson', '9780553380958', 'A hacker uncovers a digital virus that threatens reality.', 'A wild, satirical ride through virtual and real worlds.', 4.5, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(6, 'Hyperion', 'Dan Simmons', '9780553283686', 'Seven pilgrims journey to meet the mysterious Shrike in a far-future universe.', 'A richly layered narrative with poetic depth.', 4.7, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg'),
+(7, 'The Martian', 'Andy Weir', '9780553418026', 'Stranded on Mars, astronaut Mark Watney must survive and signal Earth.', 'A thrilling blend of science, humor, and survival.', 4.8, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(8, 'Brave New World', 'Aldous Huxley', '9780060850524', 'In a future society driven by genetic engineering, individuality is suppressed.', 'A chilling satire of utopia and control.', 4.6, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg'),
+(9, '1984', 'George Orwell', '9780451524935', 'A dystopian tale of surveillance and rebellion in a totalitarian regime.', 'A timeless warning against authoritarianism.', 4.9, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(10, 'The Hitchhiker’s Guide to the Galaxy', 'Douglas Adams', '9780345391803', 'Arthur Dent embarks on a hilarious journey through space after Earth is destroyed.', 'A comedic masterpiece of absurdity and wit.', 4.7, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(11, 'The Dispossessed', 'Ursula K. Le Guin', '9780061054884', 'A physicist from an anarchist society seeks to bridge worlds.', 'A philosophical exploration of freedom and society.', 4.6, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg'),
+(12, 'Childhood’s End', 'Arthur C. Clarke', '9780345347954', 'Alien overlords usher in a golden age for humanity at a mysterious cost.', 'A haunting vision of evolution and transcendence.', 4.5, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(13, 'The Forever War', 'Joe Haldeman', '9780312536633', 'A soldier fights an interstellar war where time dilation separates him from Earth.', 'A powerful critique of war and alienation.', 4.6, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg'),
+(14, 'Ringworld', 'Larry Niven', '9780345333926', 'Explorers investigate a massive artificial ring structure orbiting a star.', 'A classic of hard science fiction and imagination.', 4.5, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(15, 'Do Androids Dream of Electric Sheep?', 'Philip K. Dick', '9780345404473', 'A bounty hunter tracks rogue androids in a post-apocalyptic Earth.', 'Dick’s meditation on identity and empathy inspired Blade Runner.', 4.7, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg'),
+(16, 'Red Mars', 'Kim Stanley Robinson', '9780553560732', 'The colonization and terraforming of Mars sparks political conflict.', 'A scientifically rich and politically charged epic.', 4.6, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(17, 'The Three-Body Problem', 'Liu Cixin', '9780765382030', 'A secret military project contacts an alien civilization, reshaping humanity’s future.', 'A mind-bending blend of physics and philosophy.', 4.8, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(18, 'Annihilation', 'Jeff VanderMeer', '9780374104092', 'A biologist joins an expedition into a mysterious zone known as Area X.', 'A surreal and unsettling journey into the unknown.', 4.5, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg'),
+(19, 'Solaris', 'Stanisław Lem', '9780156027601', 'A psychologist confronts the mysteries of a sentient ocean planet.', 'A philosophical and emotional exploration of alien contact.', 4.6, 'https://images-na.ssl-images-amazon.com/images/I/81Zz5vFZJXL.jpg'),
+(20, 'A Fire Upon the Deep', 'Vernor Vinge', '9780812515282', 'A galactic-scale tale of technology, intelligence zones, and alien civilizations.', 'Vinge’s vision is vast, thrilling, and intellectually provocative.', 4.7, 'https://images-na.ssl-images-amazon.com/images/I/71Zz5vFZJXL.jpg');

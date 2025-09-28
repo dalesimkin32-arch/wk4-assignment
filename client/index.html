@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>client</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <form id="form" ARIA="Form to submit a novel to the database">
+      <input name="title" placeholder="title" ARIA="Title of the novel" />
+      <input name="author" placeholder="author" ARIA="Author of the novel" />
+      <input
+        name="ISBN13"
+        placeholder="ISBN13"
+        ARIA="ISBN13 number for the novel"
+      />
+      <input
+        name="summary"
+        placeholder="summary"
+        ARIA="A brief summary of the novel"
+      />
+      <input
+        name="review"
+        placeholder="review"
+        ARIA="A brief review of the novel"
+      />
+      <input
+        name="starRating"
+        placeholder="starRating 0.1 - 5.0"
+        ARIA="A star rating for the novel between 0.1 and 5.0"
+      />
+      <input
+        name="coverImage"
+        placeholder="coverImage as https link"
+        ARIA="A hyper link to a picture of the cover art"
+      />
+
+      <button type="submit" ARIA="Button to Submit the novel's details">
+        Submit
+      </button>
+    </form>
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
