@@ -22,8 +22,8 @@ function createNovels(novelsArray) {
     const isbn13Element = document.createElement("p");
     const summaryElement = document.createElement("p");
     const reviewElement = document.createElement("p");
-    const starRatingElement = document.createElement("p");
-    const coverImageElement = document.createElement("img");
+    const star_ratingElement = document.createElement("p");
+    const cover_imageElement = document.createElement("img");
 
     // set all innerText elements
     titleElement.innerText = novel.title;
@@ -31,10 +31,13 @@ function createNovels(novelsArray) {
     isbn13Element.innerText = `ISBN13: ${novel.isbn13}`;
     summaryElement.innerText = `A Brief Summary: ${novel.summary}`;
     reviewElement.innerText = `A short review: ${novel.review}`;
-    starRatingElement.innerText = `A star rating (0.1 to 5.0): ${novel.star_rating}`;
+    star_ratingElement.innerText = `A star rating (0.1 to 5.0): ${novel.star_rating}`;
     // image tag details require setAttribute() href and an alt description
-    coverImageElement.setAttribute("src", novel.cover_image);
-    coverImageElement.setAttribute("alt", `book cover image of ${novel.title}`);
+    cover_imageElement.setAttribute("src", novel.cover_image);
+    cover_imageElement.setAttribute(
+      "alt",
+      `book cover image of ${novel.title}`
+    );
 
     // set div novel container css ref
     divOuter.setAttribute("class", "novel-container");
@@ -45,10 +48,10 @@ function createNovels(novelsArray) {
       isbn13Element,
       summaryElement,
       reviewElement,
-      starRatingElement
+      star_ratingElement
     );
 
-    divOuter.append(divInner, coverImageElement);
+    divOuter.append(divInner, cover_imageElement);
 
     novelDisplaySection.append(divOuter);
   });

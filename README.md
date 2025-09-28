@@ -16,3 +16,9 @@ adjusted form css a bit (seems to adjust ok to screen size change, so not thinki
 added form handling .js (not tested)
 
 - will test more tomorrow.
+
+Test was bad: eventually discovered a mistake in database creation.
+
+Missed out the GENERATED ALWAYS AS IDENTITY, on the PRIMARY key, updates with no the ID were failing.
+in fixing it also changes all fields other than id to TEXT to eliminate issues with star_rating being a DECIMAL(1,1)
+Working OK now so ACPing before tidying up css

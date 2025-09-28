@@ -48,20 +48,20 @@ app.post("/sci_fi_novels", async (req, res) => {
   const isbn13FromClient = req.body.isbn13;
   const summaryFromClient = req.body.summary;
   const reviewFromClient = req.body.review;
-  const starRatingFromClient = req.body.starRating;
-  const coverImageFromClient = req.body.coverImage;
+  const star_ratingFromClient = req.body.star_rating;
+  const cover_imageFromClient = req.body.cover_image;
 
-  // we use $1, $2 as placeholders so we aren't just putting whatever sends us in the string.
+  // we use $1, $2, ... as placeholders so we aren't just putting whatever is sent to us into the string.
   const data = await db.query(
-    `INSERT INTO sci_fi_novels (title, author, ISBN13, summary, review, starRating, coverImage) VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+    `INSERT INTO sci_fi_novels (title, author, ISBN13, summary, review, star_rating, cover_image) VALUES ($1, $2, $3, $4, $5, $6, $7)`,
     [
       titleFromClient,
       authorFromClient,
       isbn13FromClient,
       summaryFromClient,
       reviewFromClient,
-      starRatingFromClient,
-      coverImageFromClient,
+      star_ratingFromClient,
+      cover_imageFromClient,
     ]
   );
 
