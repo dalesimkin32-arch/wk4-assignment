@@ -7,6 +7,7 @@ CLient ONLY showing the form (default html) Fri 26/09/2025 20:05
 
 Sat 27/09/2025 18:35
 manually added workable image data to DB, so could css page better.
+manually changed sql table for 1984 to be for Ready Player One - because
 CSS adjusted for main page layout and then
 adjusted to show better on mobile screens
 
