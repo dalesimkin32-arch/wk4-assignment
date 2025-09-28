@@ -30,8 +30,8 @@ function createNovels(novelsArray) {
     authorElement.innerText = `by ${novel.author}`;
     isbn13Element.innerText = `ISBN13: ${novel.isbn13}`;
     summaryElement.innerText = `A Brief Summary: ${novel.summary}`;
-    reviewElement.innerText = `A short review: ${novel.review}`;
-    star_ratingElement.innerText = `A star rating (0.1 to 5.0): ${novel.star_rating}`;
+    reviewElement.innerText = `A Short Review: ${novel.review}`;
+    star_ratingElement.innerText = `Star rating (0.1 to 5.0): ${novel.star_rating}`;
     // image tag details require setAttribute() href and an alt description
     cover_imageElement.setAttribute("src", novel.cover_image);
     cover_imageElement.setAttribute(

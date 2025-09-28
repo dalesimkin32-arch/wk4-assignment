@@ -22,3 +22,5 @@ Test was bad: eventually discovered a mistake in database creation.
 Missed out the GENERATED ALWAYS AS IDENTITY, on the PRIMARY key, updates with no the ID were failing.
 in fixing it also changes all fields other than id to TEXT to eliminate issues with star_rating being a DECIMAL(1,1)
 Working OK now so ACPing before tidying up css
+last CSS could have done more css, but time out over weekend. wanted to add a covert the star rating to a % of 5 stars coloured in, but versions online did not make enough sense to me to try and add
+would have needed to be at the novel div creation point and mostly js inserted (calculated from the rating)
