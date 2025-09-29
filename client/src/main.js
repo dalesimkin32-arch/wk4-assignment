@@ -6,7 +6,9 @@ const novelDisplaySection = document.getElementById("app");
 
 async function fetchNovels() {
   //  fetch () defaults to GET request
-  const response = await fetch(`http://localhost:8080/sci_fi_novels`);
+  const response = await fetch(
+    `https://wk4-assignment-pk3g.onrender.com:8080/sci_fi_novels`
+  );
   const novels = await response.json();
   createNovels(novels);
 }
@@ -73,12 +75,15 @@ form.addEventListener("submit", async (event) => {
   console.log(userNovel);
 
   // Now send a POST request to API server
-  const response = await fetch(`http://localhost:8080/sci_fi_novels`, {
-    headers: {
-      "Content-Type": "application/json",
-    },
-    method: "POST",
-    body: JSON.stringify(userNovel),
-  });
+  const response = await fetch(
+    `https://wk4-assignment-pk3g.onrender.com:8080/sci_fi_novels`,
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify(userNovel),
+    }
+  );
   console.log(response);
 });
