@@ -83,7 +83,7 @@ app.post("/sci_fi_novels", async (req, res) => {
 
 // listen on port 8080
 app.listen(8080, () => {
-  console.log(
-    "Server started on https://wk4-assignment-pk3g.onrender.com:8080"
-  );
+  console.log("Server started on http://localhost:8080");
 });
+
+/*   https://wk4-assignment-pk3g.onrender.com */
